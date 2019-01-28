@@ -1,0 +1,12 @@
+[
+  {
+    "telegram_id": "123",
+    "todoist_token": "abc",
+    "username": "a.ivanov"
+  },
+  {
+    "telegram_id": "456",
+    "todoist_token": "def",
+    "username": "b.petrov"
+  }
+]
