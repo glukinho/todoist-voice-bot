@@ -15,6 +15,8 @@ Telegram bot for creating Todoist tasks using voice messages
 4. Шлем боту голосовое сообщение, он его распознает (через Яндекс) и создает в Todoist во входящих задачу с распознанным текстом.
 
 ## Ссылки
+Telegram Bot API: https://core.telegram.org/bots/api
+
 Яндекс SpeechKit: https://cloud.yandex.ru/docs/speechkit/
 
 Todoist REST API: https://developer.todoist.com/rest/v8/
