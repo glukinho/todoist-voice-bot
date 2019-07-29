@@ -1,5 +1,4 @@
 <?php
-
 include "/var/www/html/todoist-voice-bot/classes/todoist.class.php";
 include "/var/www/html/todoist-voice-bot/classes/YandexSpeechKit.class.php";
 
@@ -240,8 +239,19 @@ if (isset($input->message)) {
 			reply("Задача с id {$add_task->id} и текстом '{$recognized->result}' создана");
 		} else {
 			reply("Ошибка при создании задачи!");
-		
 		}
 	
+	} else {
+		// reply ($input->message->text);
+		
+		$todoist = new Todoist($auth->todoist_token);
+		$add_task_json = $todoist->addTaskToInbox($input->message->text);
+		$add_task = json_decode($add_task_json);
+		
+		if (isset($add_task->id)) {
+			reply("Задача с id {$add_task->id} и текстом '{$input->message->text}' создана");
+		} else {
+			reply("Ошибка при создании задачи!");
+		}
 	}
 }
