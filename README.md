@@ -14,6 +14,8 @@ Telegram bot for creating Todoist tasks using voice messages
 3. В файл yandex-iam-token.json кладем IAM-токен от Яндекса. Подробности здесь: https://cloud.yandex.ru/docs/speechkit/concepts/auth
 4. Шлем боту голосовое сообщение, он его распознает (через Яндекс) и создает в Todoist во входящих задачу с распознанным текстом.
 
+Можно отправить (или переслать) боут обычное текстовое сообщение и он создаст из него задачу во входящих.
+
 ## Ссылки
 Telegram Bot API: https://core.telegram.org/bots/api
 
