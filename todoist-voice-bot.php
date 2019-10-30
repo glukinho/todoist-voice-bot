@@ -12,7 +12,7 @@ $logfile = 				"/var/www/html/todoist-voice-bot/todoist-voice-bot.log";
 $users_file = 			"/var/www/html/todoist-voice-bot/users.json";
 $file_tmp_path = 		"/var/www/html/todoist-voice-bot/tmp/";
 			
-$token = 				'771879835:AAFAd86vndX4QiHR9_dFYBlssLst9ooY68o';
+$token = 				'<bot_token>';
 $bot_url = 				"https://api.telegram.org/bot" . $token;
 $file_url = 			"https://api.telegram.org/file/bot" . $token;
 
